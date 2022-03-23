@@ -1,7 +1,16 @@
+@font-face {
+    font-family: Orbitron;
+    src: url('fonts/Orbitron-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: Oxanium;
+    src: url('fonts/Oxanium-VariableFont_wght.ttf');
+}
 body {
     background-color: #2c2c2c;
     margin-left: 0px;
     margin-right: 0px;
+    font-family: Orbitron;
 }
 header, footer {
     background-color: black;
@@ -54,5 +63,8 @@ footer h3 {
 .about {
     display: block;
     color: white;
-    margin: 20px;
+    margin: 20px;   
+}
+.about p {
+    font-family: Oxanium;
 }
