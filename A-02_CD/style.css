@@ -1,0 +1,60 @@
+@font-face {
+    font-family: Audiowide;
+    src: url('font/Audiowide-Regular.ttf');
+}
+body {
+    margin: 0px;
+	background-image: url("img/198XAD_bg2.jpg");
+    background-position: center;
+	background-repeat: repeat;
+  	background-attachment: fixed;
+}
+main {
+    margin-top: 50%;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "titol1 res sidebar"
+        "titol2 res sidebar"
+    ;
+}
+h1, h2 {
+    color: rgb(229, 165, 226);
+    font-family: Audiowide;
+    background-color: rgb(255,255,179);
+    border-style:groove;
+    border-radius: 10px;
+    border-width: 10px;
+    width:min-content;
+    height:min-content;
+    margin-left: 50%;
+}
+sidebar {
+    background-color: rgb(4, 4, 61);
+    z-index: 1;
+    grid-area: sidebar;
+    margin-right: 20%;
+    border-style:groove;
+    border-radius: 10px;
+    border-width: 10px;
+    border-color: rgb(229, 165, 226);
+}
+h1 {
+    grid-area: titol1;
+    font-size: 400%;
+}
+h2 {
+    grid-area: titol2;
+    font-size: 300%;
+}
+iframe {
+    width: 60%;
+    margin: 5%;
+    margin-top: 8%;
+}
+img {
+    height: 80%;
+    width: 28%;
+}
