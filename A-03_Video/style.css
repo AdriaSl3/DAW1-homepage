@@ -1,0 +1,61 @@
+@font-face {
+    font-family: tekken;
+    src: url('fonts/tarrgetcondital.ttf');
+}
+#video {
+    width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.text {
+    font-family: 'tekken';
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #d91111;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "comandos"
+        "text"
+    ;
+}
+
+.comandos {
+    margin-top: -1rem;
+    grid-area: comandos;
+    border: solid rgb(255, 6, 6);
+    background: none;
+}
+
+h1 {
+    grid-area: text;
+    margin-top: 1rem;
+}
+
+#boton {
+    width: 150px;
+    font-size: 30px;
+    font-family: 'tekken';
+    padding: 10px;
+    border: none;
+    background: rgb(187, 36, 22);
+    color: rgb(199, 199, 199);
+    cursor: pointer;
+    margin-left: 83%;
+    margin-top: 1rem;
+    grid-area: text;
+}
+
+#boton:hover {
+    background: #ddd;
+    color: black;
+}
